@@ -5,6 +5,8 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ConfigurableApplicationContext;
 
+import com.alibaba.dubbo.spring.boot.annotation.EnableDubboConfiguration;
+
 /**
  * Spring Boot 应用启动类
  *
@@ -12,6 +14,7 @@ import org.springframework.context.ConfigurableApplicationContext;
  */
 // Spring Boot 应用的标识
 @SpringBootApplication
+@EnableDubboConfiguration
 public class ClientApplication {
 
     public static void main(String[] args) {
